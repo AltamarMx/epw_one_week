@@ -1,0 +1,30 @@
+&location
+City = 'Temixco'
+StateProv = 'Morelos'
+Country = 'MEX'
+InLat = 18.85
+InLong = -99.14
+InElev = 1280
+InTime = -6
+/
+
+&miscdata
+Comments1='archivo generado por gbv a partir de datos de la esolmet y ruoa del 2018'
+Comments2='para una semana de marzo del 3 al cumple de Memo'
+SourceData = 'esolmet y ruoa'
+/
+
+&wthdata
+NumInHour=6
+InputFileType='CUSTOM'
+InFormat='DELIMITED'
+DataElements=Date,HH:MM,DryBulb,relhum,windspd,winddir,atmos pressure,GloHorzRad,difhorzrad,Direct Normal Radiation
+DataUnits='mm/dd/yyyy','hh:mm','C','%','m/s','deg','Pa','Wh/m2','Wh/m2','Wh/m2'
+DataConversionFactors = 1,1,1,1,1,1,100,1,1,1
+DelimiterChar=','
+/
+
+&datacontrol
+NumRecordsToSkip=0
+MaxNumRecordsToRead=1008
+/
